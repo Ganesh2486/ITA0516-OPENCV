@@ -1,0 +1,13 @@
+import cv2
+
+path = r"C:/Users/sidda/Downloads/F4CPFCcXgAACTMt.jpg"
+src = cv2.imread(path)
+window_name = 'Image'
+
+flipped_image = cv2.flip(src, 1)
+
+
+rotated_image = cv2.transpose(flipped_image)
+
+cv2.imshow(window_name, rotated_image)
+cv2.waitKey(0)
