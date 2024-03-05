@@ -1,0 +1,8 @@
+import cv2
+image=cv2.imread('C:/Users/GANESH/Pictures/20221017_123128.jpg')
+cv2.imshow('original',image)
+cv2.waitKey(0)
+grayimage=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
+cv2.imshow('grayimage',grayimage)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
